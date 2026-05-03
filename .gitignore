@@ -16,3 +16,4 @@ ENV/
 
 # Folders
 Backend/data
+Backend/intermediate_data
