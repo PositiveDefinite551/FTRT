@@ -14,3 +14,11 @@ ENV/
 .env
 # Files
 
+# Ignore app data folder
+Backend/app data/
+
+# Ignore sample data folder
+Backend/sample data/
+
+# Ignore all notebook files inside Backend
+Backend/*.ipynb
