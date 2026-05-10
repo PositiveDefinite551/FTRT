@@ -1,0 +1,143 @@
+{
+  "A. Applicant": {
+    "A.1 Individual": {
+      "Surname": "D",
+      "First name(s)": "A",
+      "Date of birth": "1)/2/1/)2/)1/9) 8/9 e.g. 31/12/1960 D D M M Y Y Y Y",
+      "Place of birth": "Thilisi, Georgia",
+      "Nationality": "Georgia",
+      "Address": ". St. Ni..., building ..., apartment N.., 0000, Thilisi, Georgia",
+      "Telephone": "+995 512 34 56 78",
+      "Email": "",
+      "Sex": "female"
+    },
+    "A.2 Organisation": {
+      "Name": null,
+      "Identification number": null,
+      "Date of registration": null,
+      "Activity": null,
+      "Registered address": null,
+      "Telephone": null,
+      "Email": null
+    }
+  },
+  "B. States": {
+    "Selected": [
+      "Georgia"
+    ],
+    "Available": [
+      "Albania",
+      "Andorra",
+      "Armenia",
+      "Austria",
+      "Azerbaijan",
+      "Belgium",
+      "Bosnia and Herzegovina",
+      "Bulgaria",
+      "Croatia",
+      "Cyprus",
+      "Czech Republic",
+      "Denmark",
+      "Estonia",
+      "Finland",
+      "France",
+      "Georgia",
+      "Germany",
+      "Greece",
+      "Hungary",
+      "Iceland",
+      "Ireland",
+      "Italy",
+      "Latvia",
+      "Liechtenstein",
+      "Lithuania",
+      "Luxembourg",
+      "Malta",
+      "Moldova",
+      "Monaco",
+      "Montenegro",
+      "Netherlands",
+      "North Macedonia",
+      "Norway",
+      "Poland",
+      "Portugal",
+      "Romania",
+      "San Marino",
+      "Serbia",
+      "Slovakia",
+      "Slovenia",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "T\u00fcrkiye",
+      "Ukraine",
+      "United Kingdom"
+    ]
+  },
+  "C. Representative (Individual applicant)": {
+    "C.1 Non-lawyer": {
+      "Capacity / relationship": null,
+      "Surname": null,
+      "First name(s)": null,
+      "Nationality": null,
+      "Address": null,
+      "Telephone": null,
+      "Fax": null,
+      "Email": null
+    },
+    "C.2 Lawyer": {
+      "Surname": "G",
+      "First name(s)": "G",
+      "Nationality": "Georgia",
+      "Address": null,
+      "Telephone": "Xx",
+      "Fax": null,
+      "Email": "GG@yahoo.com",
+      "eComms email": "address) alexandrepataraia@ yahoo.com By completing this field you agree to using the eComms system. European Court of Human Rights - Application form 4/13"
+    }
+  },
+  "D. Representative (Organisation)": {
+    "D.1 Organisation official": {
+      "Capacity / function": null,
+      "Surname": null,
+      "First name(s)": null,
+      "Nationality": null,
+      "Address": null,
+      "Telephone": null,
+      "Fax": null,
+      "Email": null
+    },
+    "D.2 Lawyer": {
+      "Surname": null,
+      "First name(s)": null,
+      "Nationality": null,
+      "Address": null,
+      "Telephone": null,
+      "Fax": null,
+      "Email": null
+    }
+  },
+  "E. Statement of facts": "58. 1. The latter application concerns the possible violations of the European Convention on Human Rights (\u2018ECHR/ Convention\u2019) in regards to the Applicant's ('A.D.') husband's ('N.K.') arrest and the inability due to the Georgian legislation to appeal the legality of the arrest in the Courts, the lack of fair trial and the subsequent murder of N.K. during him being placed in custody of the law enforcement officers and the ineffectiveness of the investigation of his murder. Thus, the Applicant alleges the violations of both the negative and positive aspects of Article 2, Article 5, Article 6(1)(2) and Article 13. 2. On February 15, 2020, the applicant's husband - N.K., a well-known businessman, was arrested, as there was a suspicion that the latter was allegedly providing assistance to a terrorist organization operating in the occupied Tskhinvali region/the so-called South Ossetia (Annex (\u2018A\u2019) 1). In 2018-2019, the mentioned organization allegedly carried out several terrorist attacks, including in the center of Tbilisi, which caused the deaths of civilians, as well as 35 police officers (A2). 3. On February 20, 2020, N.K. was charged with the offense of Article 323' of the Criminal Code of Georgia (\"Illegal purchase, storage, carrying, manufacturing, transportation, sending, taking or use of firearms, ammunition, explosive substances or explosive devices for terrorist purposes for the purpose\") under Section 5 (\"the action provided for in Sections 1, 2, 3 or 4 of this Article, which caused the death of a person or other serious consequences\") (A3; A15). 4. On the same day, the Tbilisi City Court used detention as a preventive measure (A4). The court shared the position of the prosecution that \"the applicant, as a well-known businessman with ties to a terrorist organization operating outside the territory controlled by Georgia, had the opportunity to hide, obstruct the administration of justice and influence witnesses\" (A4). On April 21, 2020, N.K. appealed against the decision of the Tbilisi City Court (AS), however, the Court of Appeals declared the appeal inadmissible on the basis of failure to meet procedural requirements (A6). 5. Considering the circumstances of the case and the personality of the Applicant\u2019s husband, the case under consideration was actively covered by the media (A7). During the arrest of the Applicant\u2019s husband, one of the ministers made a public statement (A8). In the mentioned statement, the minister, among other things, said that the law-enforcement agencies arrested one of the most dangerous criminals who provided assistance to the terrorist organization (A8). The said statement was widely disseminated by the media (A8.1). 6. The Tbilisi City Court found the applicant's husband guilty and sentenced him to 15 years of imprisonment (A9). The Court of Appeals shared the decision of the City Court (A10). The national courts considered that since the prosecution had limited access to the occupied territories, the indirect testimony of thirteen employees of the Applicant\u2019s husband constituted sufficient evidence to prove the applicant's guilt (A9; A10). On February 1, 2022, the Supreme Court declared NK's application inadmissible (A11). 7. On February 2, 2022, during the transfer to the penitentiary institution, N.K. was murdered as a result of a bullet fired by an unidentified person (A12.1; A12.2.2). The fact of NK being transferred to a penitentiary institution was actively covered by the media before the aforementioned murder (A12.2.1). 8. On February 2, 2022, the General Prosecutor's Office of Georgia initiated a criminal investigation regarding this murder of the Applicant's husband (A12.1). The Applicant - A.D. was actively involved in the investigation (A13). However, the status of the victim has not been officially assigned, and until now, criminal prosecution against a specific person has not been initiated (A14).",
+  "F. Alleged violations": {
+    "Article 61": "Convention. Explanation 1. Article 2 ranks as one of the most fundamental provisions in the Convention, one which in peace time, admits of no derogation under Article 15. Together with Article 3, it enshrines one of the basic values of the democratic societies making up the Council of Europe (Giuliani and Gaggio v. Italy [GC], no. 23458/02, 24.03.2011, \u00a7 174.). As such, its provisions must be strictly construed (McCann and Others v. the United Kingdom, no.",
+    "Article 62": "the Convention Explanation 5. Article 2 which imposes a duty on that State to secure the right to life by putting in place effective criminal-law provisions to deter the commission of offences against the person, backed up by law-enforcement machinery for the prevention, suppression and punishment of breaches of such provisions. This obligation requires by implication that there should be some form of effective official investigation when there is reason to"
+  },
+  "G. Admissibility": {
+    "Complaints summary": null,
+    "Unused remedies": "Yes",
+    "Why unused": null
+  },
+  "H. Other international proceedings": {
+    "Any proceedings": null,
+    "Details": null,
+    "Other ECHR applications": null,
+    "Application numbers": null
+  },
+  "I. List of accompanying documents": [],
+  "J. Final declaration": {
+    "Additional comments": null,
+    "Date": null,
+    "Signed by": null,
+    "Correspondence contact": null
+  }
+}

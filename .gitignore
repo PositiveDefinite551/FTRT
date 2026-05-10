@@ -14,7 +14,3 @@ ENV/
 .env
 # Files
 
-
-# Folders
-Backend/data
-Backend/intermediate_data
