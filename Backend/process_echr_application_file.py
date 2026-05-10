@@ -17,7 +17,8 @@ import json
 import os
 import re
 import traceback
-from datetime import datetime, time
+import time
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, TypedDict
 
@@ -1001,9 +1002,10 @@ if __name__ == "__main__":
         enable_logs= True
     )
     end_time = time.time()
-    total_seconds = round(end_time - start_time, 2)
+    total_duration = timedelta(seconds=(end_time - start_time))
+    generation_time_str = str(total_duration).split(".")[0] 
     
-    print(f"\n\nProcessing Time: {total_seconds} seconds")
+    print(f"\n\nProcessing Time: {generation_time_str} seconds")
     print("\n\nFinal Result")
     print("=" * 80)
     print(json.dumps(result, ensure_ascii=False, indent=2))
@@ -1029,7 +1031,7 @@ if __name__ == "__main__":
         "timestamp": timestamp,
         "model_name": DEFAULT_MODEL_NAME,
         "base_url": LLM_BASE_URL,
-        "generation_time_seconds": total_seconds,
+        "generation_time_seconds": generation_time_str,
     },
     "result": result,
     }
@@ -1041,5 +1043,5 @@ if __name__ == "__main__":
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(history_payload, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ Result saved successfully:")
-    print(f"📁 {output_file}")
+    print(f"\nResult saved successfully:")
+    print(f"{output_file}")
