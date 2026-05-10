@@ -73,7 +73,7 @@ def log_header(title: str) -> None:
 
     line = "=" * 80
     print(f"\n{line}")
-    print(f"🚀 {title}")
+    print(f"{title}")
     print(line)
 
 
@@ -81,7 +81,7 @@ def log_section(title: str) -> None:
     if not ENABLE_LOGS:
         return
 
-    print(f"\n📌 {title}")
+    print(f"\n {title}")
     print("-" * 60)
 
 
@@ -90,28 +90,28 @@ def log_step(message: str) -> None:
         return
 
     timestamp = datetime.now().strftime("%H:%M:%S")
-    print(f"[{timestamp}] 🔹 {message}")
+    print(f"[{timestamp}] * {message}")
 
 
 def log_success(message: str) -> None:
     if not ENABLE_LOGS:
         return
 
-    print(f"✅ {message}")
+    print(f" {message}")
 
 
 def log_warning(message: str) -> None:
     if not ENABLE_LOGS:
         return
 
-    print(f"⚠️  {message}")
+    print(f"  {message}")
 
 
 def log_error(message: str) -> None:
     if not ENABLE_LOGS:
         return
 
-    print(f"❌ {message}")
+    print(f" {message}")
 
 
 # =============================================================================

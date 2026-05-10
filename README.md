@@ -200,9 +200,6 @@ project/
 ├── Backend/
 │   ├── echr_application_parser.py
 │   ├── prompts.json
-│   ├── sample data/
-│   ├── app data/
-│   └── notebooks/
 │
 ├── README.md
 ├── requirements.txt
@@ -288,8 +285,8 @@ Create a `.env` file:
 ```env
 LLM_API_KEY=your_api_key
 LLM_BASE_URL=your_base_url
-LLM_MODEL_NAME=llama-3.3-70b-instruct
-TESSERACT_CMD=C:\Program Files\Tesseract-OCR\tesseract.exe
+LLM_MODEL_NAME=your_model_name
+TESSERACT_CMD=your_tesseract_path
 ```
 
 ---
@@ -300,14 +297,6 @@ TESSERACT_CMD=C:\Program Files\Tesseract-OCR\tesseract.exe
 
 ```python
 from echr_application_parser import process_echr_application_form
-
-result = process_echr_application_form(
-    form_file_path="sample data/form.pdf",
-    prompts_json_path="app data/prompts.json",
-)
-
-print(result["success_response_json"])
-print(result["failed_response_json"])
 ```
 
 ---
@@ -327,9 +316,9 @@ The pipeline includes detailed execution logs:
 Example:
 
 ```text
-🚀 STEP 1 — OCR EXTRACTION
-📌 OCR Processing Page 1/14
-✅ Page completed successfully
+STEP 1 — OCR EXTRACTION
+OCR Processing Page 1/14
+Page completed successfully
 ```
 
 Logs can be disabled:
