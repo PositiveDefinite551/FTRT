@@ -17,7 +17,7 @@ import json
 import os
 import re
 import traceback
-from datetime import datetime
+from datetime import datetime, time
 from pathlib import Path
 from typing import Any, Dict, List, Optional, TypedDict
 
@@ -992,12 +992,54 @@ def process_echr_application_form(
 # =============================================================================
 
 if __name__ == "__main__":
+    print("Using llm model:", DEFAULT_MODEL_NAME)
+    print("Base URL:", LLM_BASE_URL)
+    start_time = time.time()
     result = process_echr_application_form(
         form_file_path="sample data/printed Filled ECHR application form.pdf",
         prompts_json_path="app data/prompts.json",
         enable_logs= True
     )
-
+    end_time = time.time()
+    total_seconds = round(end_time - start_time, 2)
+    
+    print(f"\n\nProcessing Time: {total_seconds} seconds")
     print("\n\nFinal Result")
     print("=" * 80)
     print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+   
+    # ------------------------------------------------------------------
+    # Create History folder if it does not exist
+    # ------------------------------------------------------------------
+
+    history_dir = Path("History")
+    history_dir.mkdir(parents=True, exist_ok=True)
+
+    # ------------------------------------------------------------------
+    # Generate timestamped filename
+    # ------------------------------------------------------------------
+
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    output_file = history_dir / f"echr_result_{timestamp}.json"
+
+    history_payload = {
+    "metadata": {
+        "timestamp": timestamp,
+        "model_name": DEFAULT_MODEL_NAME,
+        "base_url": LLM_BASE_URL,
+        "generation_time_seconds": total_seconds,
+    },
+    "result": result,
+    }
+
+    # ------------------------------------------------------------------
+    # Save result
+    # ------------------------------------------------------------------
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(history_payload, f, ensure_ascii=False, indent=2)
+
+    print(f"\n✅ Result saved successfully:")
+    print(f"📁 {output_file}")
