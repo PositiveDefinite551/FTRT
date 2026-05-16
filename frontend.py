@@ -1,57 +1,60 @@
 import streamlit as st
+import os
+import tempfile
+import json
+from dotenv import load_dotenv
+from Backend.process_echr_application_file import process_echr_application_form
+load_dotenv()
 
-st.image("image.png")
+#st.image("image.png")
 st.title("European court of human rights application")
-
-with st.sidebar:
-    st.write("A. The Applicant")
-    st.write("B. State(s) against which the application is directed")
-col1, col2 = st.columns(2)
-
-with col1:
-    with st.container(border=True, horizontal_alignment="left", width="stretch"):
-        
-        st.header("A.1. The individual")
-
-        Name = st.text_input("1. Surname")
-        Surname = st.text_input("2. First name(s)")
-        date_of_birth = st.date_input("3. Date of birth")
-        place_of_birth = st.text_input("4. Place of Birth")
-        nationality = st.text_input("4. Nationality")
-        addres = st.text_input("6. Adress")
-        telephone = st.text_input("7. Telephone (including international dialling code)")
-        email = st.text_input("8. Email (if any)")
-        sex = st.multiselect("9. Sex", ["male", "female"], max_selections=1)
-
-    with col2:
-        with st.container(border=True, horizontal_alignment="left", width="stretch"):
-            
-            st.header("A.2. The Organisation")
-
-            name = st.text_input("10. Name")
-            identiification_number = st.text_input("11. Identifiication number (if any)")
-            date_of_registration_or_incorporation = st.date_input("12. Date of regsitration or incorporation (if any)")
-            activity = st.text_input("13. Activity")
-            registered_adress = st.text_input("14. Registered_adress")
-
-st.header("B. State(s) against which the application is directed")
-
-states = st.text_input("State(s) against which the application is directed")
-
-st.header("C. Representative(s) of the individual applicant")
-
-col3, col4 = st.columns(2)
+st.markdown(" This tool analyses European Court of Human Rights (ECHR) application")
 
 
-with col3:
-    with st.container(border=True, horizontal_alignment="left", width="stretch"):
-        
-        st.header("C.1")
-        a = st.text_input("### TODO", key="1")
+st.sidebar.header("Settings")
+enable_logs = st.sidebar.checkbox("Show processingg logs", value=True)
 
-with col4:
-    with st.container(border=True, horizontal_alignment="left", width="stretch"):
-        st.header("C.2.")
-        b = st.text_input("### TODO", key="2")
+uploaded_file = st.file_uploader("Upload ECHR application PDF", type="pdf")
 
-            
+if uploaded_file is not None:
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
+        tmp_file.write(uploaded_file.getvalue())
+        tmp_file_path = tmp_file.name
+
+if st.button("Analyse Application"):
+    with st.spinner("Analysing..."):
+        try: 
+            # Call Backend get `results`
+            results = process_echr_application_form(tmp_file_path, "Backend/prompts.json", enable_logs=enable_logs)
+            st.success("Analysis Complete.")
+            tab1, tab2 = st.tabs(["Results", "Raw Data"])
+            with tab1:
+                    # Display results from Json
+                    valid_data = results.get("success_response_json", {})
+                    
+                    for section_name, fields in valid_data.items():
+                        with st.expander(f"Section: {section_name}"):
+                            if isinstance(fields, dict):
+                                for field, details in fields.items():
+                                    # See the structure in README.md
+                                    st.subheader(f"Field: {field}")
+                                    col1, col2 = st.columns(2)
+                                    with col1:
+                                        st.write("**Given Value:**")
+                                        st.info(details.get("given_value", "N/A"))
+                                    with col2:
+                                        st.write("**Corrected/Suggested:**")
+                                        st.success(details.get("corrected_value", "N/A"))
+                                    
+                                    st.warning(f"**Issue:** {details.get('problem_in_given_value', 'None')}")
+                                    st.write(f"*Summary:* {details.get('verification_summary', '')}")
+                                    st.divider()
+            with tab2:
+                st.json(results)
+
+        except Exception as e:
+            st.error(f"Something went wrong: {e} ")
+        finally:
+            os.remove(tmp_file_path)
+else:
+    st.info("Upload PDF to begin.")
