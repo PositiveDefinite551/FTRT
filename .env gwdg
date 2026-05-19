@@ -1,4 +1,0 @@
-LLM_API_KEY=2e496dfe70e7568e825f04e609cf138b
-LLM_BASE_URL=https://chat-ai.academiccloud.de/v1
-LLM_MODEL_NAME=llama-3.3-70b-instruct
-TESSERACT_CMD=C:\Program Files\Tesseract-OCR\tesseract.exe

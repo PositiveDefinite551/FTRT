@@ -1,0 +1,587 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-10_17-20-10",
+    "model_name": "llama-3.3-70b-instruct",
+    "base_url": "https://chat-ai.academiccloud.de/v1",
+    "generation_time_seconds": "0:19:00"
+  },
+  "result": {
+    "success_response_json": {
+      "A. Applicant": {
+        "A.1 Individual": {
+          "Surname": {
+            "given_value": "D",
+            "corrected_value": null,
+            "problem_in_given_value": "The surname is incomplete and does not match the required format.",
+            "verification_summary": "The surname must be a full family name as it appears in the official identity document.",
+            "confidence": "low"
+          },
+          "First name(s)": {
+            "given_value": "A",
+            "corrected_value": null,
+            "problem_in_given_value": "The first name is incomplete and does not match the required format.",
+            "verification_summary": "All given names are required to identify the applicant unambiguously.",
+            "confidence": "low"
+          },
+          "Date of birth": {
+            "given_value": "1)/2/1/)2/)1/9) 8/9 e.g. 31/12/1960 D D M M Y Y Y Y",
+            "corrected_value": null,
+            "problem_in_given_value": "The date of birth is not in the correct format and appears to be an example rather than an actual date.",
+            "verification_summary": "The date of birth must be in the format DD/MM/YYYY.",
+            "confidence": "low"
+          },
+          "Place of birth": {
+            "given_value": "Thilisi, Georgia",
+            "corrected_value": "Tbilisi, Georgia",
+            "problem_in_given_value": "The city name is misspelled.",
+            "verification_summary": "The place of birth must include the town or city and the country.",
+            "confidence": "medium"
+          },
+          "Nationality": {
+            "given_value": "Georgia",
+            "corrected_value": "Georgia",
+            "problem_in_given_value": null,
+            "verification_summary": "The nationality must be the current nationality as in the travel document.",
+            "confidence": "high"
+          },
+          "Address": {
+            "given_value": ". St. Ni..., building ..., apartment N.., 0000, Thilisi, Georgia",
+            "corrected_value": null,
+            "problem_in_given_value": "The address is incomplete and does not provide a full postal address.",
+            "verification_summary": "The address must be a full postal address separate from any lawyer's address.",
+            "confidence": "low"
+          },
+          "Telephone": {
+            "given_value": "+995 512 34 56 78",
+            "corrected_value": "+995 512 34 56 78",
+            "problem_in_given_value": null,
+            "verification_summary": "The telephone number must include the full international dialling code.",
+            "confidence": "high"
+          },
+          "Email": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": null,
+            "verification_summary": "An email address is optional but must be a working email address if provided.",
+            "confidence": "medium"
+          },
+          "Sex": {
+            "given_value": "female",
+            "corrected_value": "female",
+            "problem_in_given_value": null,
+            "verification_summary": "The sex must be either male or female.",
+            "confidence": "high"
+          }
+        },
+        "A.2 Organisation": {
+          "Name": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The organisation name is missing.",
+            "verification_summary": "The organisation name must be the full official name as it appears in the official register.",
+            "confidence": "low"
+          },
+          "Identification number": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The identification number is missing.",
+            "verification_summary": "The identification number must be the official registration number assigned in the official register, if any.",
+            "confidence": "low"
+          },
+          "Date of registration": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The date of registration is missing.",
+            "verification_summary": "The date of registration must be in the format DD/MM/YYYY, if applicable.",
+            "confidence": "low"
+          },
+          "Activity": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The activity is missing.",
+            "verification_summary": "The activity must be a brief description of the organisation's main purpose or activity.",
+            "confidence": "low"
+          },
+          "Registered address": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The registered address is missing.",
+            "verification_summary": "The registered address must be the full official registered address as it appears in the official register.",
+            "confidence": "low"
+          },
+          "Telephone": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The telephone number is missing.",
+            "verification_summary": "The telephone number must include the full international dialling code.",
+            "confidence": "low"
+          },
+          "Email": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "The email address is missing.",
+            "verification_summary": "The email address must be a working email address if provided, preferably an institutional email address.",
+            "confidence": "low"
+          }
+        }
+      },
+      "B. States": {
+        "Selected": {
+          "given_value": [
+            "Georgia"
+          ],
+          "corrected_value": [
+            "Georgia"
+          ],
+          "problem_in_given_value": "None",
+          "verification_summary": "The given value 'Georgia' is a valid country and is present in the list of available countries.",
+          "confidence": "high"
+        },
+        "Available": {
+          "given_value": [
+            "Albania",
+            "Andorra",
+            "Armenia",
+            "Austria",
+            "Azerbaijan",
+            "Belgium",
+            "Bosnia and Herzegovina",
+            "Bulgaria",
+            "Croatia",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Estonia",
+            "Finland",
+            "France",
+            "Georgia",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Iceland",
+            "Ireland",
+            "Italy",
+            "Latvia",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Malta",
+            "Moldova",
+            "Monaco",
+            "Montenegro",
+            "Netherlands",
+            "North Macedonia",
+            "Norway",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "San Marino",
+            "Serbia",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Sweden",
+            "Switzerland",
+            "Türkiye",
+            "Ukraine",
+            "United Kingdom"
+          ],
+          "corrected_value": [
+            "Albania",
+            "Andorra",
+            "Armenia",
+            "Austria",
+            "Azerbaijan",
+            "Belgium",
+            "Bosnia and Herzegovina",
+            "Bulgaria",
+            "Croatia",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Estonia",
+            "Finland",
+            "France",
+            "Georgia",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Iceland",
+            "Ireland",
+            "Italy",
+            "Latvia",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Malta",
+            "Moldova",
+            "Monaco",
+            "Montenegro",
+            "Netherlands",
+            "North Macedonia",
+            "Norway",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "San Marino",
+            "Serbia",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Sweden",
+            "Switzerland",
+            "Türkiye",
+            "Ukraine",
+            "United Kingdom"
+          ],
+          "problem_in_given_value": "None",
+          "verification_summary": "The given list of available countries appears to be comprehensive and accurate.",
+          "confidence": "high"
+        }
+      },
+      "C. Representative (Individual applicant)": {
+        "C.1 Non-lawyer": {
+          "Capacity / relationship": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The legal basis on which a person acts on the applicant’s behalf must be clearly established.",
+            "confidence": "low"
+          },
+          "Surname": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The full identifying details of the representative are a formal requirement under Rule 47.",
+            "confidence": "low"
+          },
+          "First name(s)": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "All given names must be provided for the representative.",
+            "confidence": "low"
+          },
+          "Nationality": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The representative’s nationality is part of their identification.",
+            "confidence": "low"
+          },
+          "Address": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The representative’s postal address is the primary correspondence address once they are appointed.",
+            "confidence": "low"
+          },
+          "Telephone": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "Telephone contact details allow the Registry to reach the representative quickly for urgent or time-sensitive communications.",
+            "confidence": "low"
+          },
+          "Fax": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "A fax number is optional but useful for some Registry communications.",
+            "confidence": "low"
+          },
+          "Email": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "Email provides an additional contact channel.",
+            "confidence": "low"
+          }
+        },
+        "C.2 Lawyer": {
+          "Surname": {
+            "given_value": "G",
+            "corrected_value": null,
+            "problem_in_given_value": "Incomplete surname",
+            "verification_summary": "The lawyer’s full identity is a formal requirement under Rule 47.",
+            "confidence": "low"
+          },
+          "First name(s)": {
+            "given_value": "G",
+            "corrected_value": null,
+            "problem_in_given_value": "Incomplete first name",
+            "verification_summary": "All given names of the lawyer are required for unambiguous identification in the Court’s records.",
+            "confidence": "low"
+          },
+          "Nationality": {
+            "given_value": "Georgia",
+            "corrected_value": "Georgia",
+            "problem_in_given_value": null,
+            "verification_summary": "The lawyer’s nationality is part of their formal identification required under Rule 47.",
+            "confidence": "high"
+          },
+          "Address": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The lawyer’s professional address becomes the primary correspondence address.",
+            "confidence": "low"
+          },
+          "Telephone": {
+            "given_value": "Xx",
+            "corrected_value": null,
+            "problem_in_given_value": "Invalid telephone number",
+            "verification_summary": "A working telephone number for the lawyer allows the Registry to make urgent contact.",
+            "confidence": "low"
+          },
+          "Fax": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "A fax number is optional but useful for certain Registry transmissions.",
+            "confidence": "low"
+          },
+          "Email": {
+            "given_value": "GG@yahoo.com",
+            "corrected_value": "GG@yahoo.com",
+            "problem_in_given_value": "Potential issue with personal email address",
+            "verification_summary": "The lawyer’s email at Field 32 is linked to the eComms account at Field 37.",
+            "confidence": "medium"
+          },
+          "eComms email": {
+            "given_value": "address) alexandrepataraia@ yahoo.com By completing this field you agree to using the eComms system. European Court of Human Rights - Application form 4/13",
+            "corrected_value": "alexandrepataraia@yahoo.com",
+            "problem_in_given_value": "Invalid email format and extra text",
+            "verification_summary": "eComms is the Court’s secure electronic communication portal for representatives.",
+            "confidence": "medium"
+          }
+        }
+      },
+      "D. Representative (Organisation)": {
+        "D.1 Organisation official": {
+          "Capacity / function": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required to verify the chain of authority.",
+            "confidence": "low"
+          },
+          "Surname": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for the Court's records and identification.",
+            "confidence": "low"
+          },
+          "First name(s)": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for unambiguous identification.",
+            "confidence": "low"
+          },
+          "Nationality": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for formal identification.",
+            "confidence": "low"
+          },
+          "Address": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for correspondence.",
+            "confidence": "low"
+          },
+          "Telephone": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for urgent communications.",
+            "confidence": "low"
+          },
+          "Fax": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is optional but required if used for correspondence.",
+            "confidence": "low"
+          },
+          "Email": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for additional communication channel.",
+            "confidence": "low"
+          }
+        },
+        "D.2 Lawyer": {
+          "Surname": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for the lawyer's identification.",
+            "confidence": "low"
+          },
+          "First name(s)": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for unambiguous identification.",
+            "confidence": "low"
+          },
+          "Nationality": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for formal identification.",
+            "confidence": "low"
+          },
+          "Address": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for correspondence.",
+            "confidence": "low"
+          },
+          "Telephone": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for urgent communications.",
+            "confidence": "low"
+          },
+          "Fax": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is optional but required if used for correspondence.",
+            "confidence": "low"
+          },
+          "Email": {
+            "given_value": null,
+            "corrected_value": null,
+            "problem_in_given_value": "Missing value",
+            "verification_summary": "The field is required for primary electronic communication channel.",
+            "confidence": "low"
+          }
+        }
+      },
+      "E. Statement of facts": {
+        "given_value": "58. 1. The latter application concerns the possible violations of the European Convention on Human Rights (‘ECHR/ Convention’) in regards to the Applicant's ('A.D.') husband's ('N.K.') arrest and the inability due to the Georgian legislation to appeal the legality of the arrest in the Courts, the lack of fair trial and the subsequent murder of N.K. during him being placed in custody of the law enforcement officers and the ineffectiveness of the investigation of his murder. Thus, the Applicant alleges the violations of both the negative and positive aspects of Article 2, Article 5, Article 6(1)(2) and Article 13. 2. On February 15, 2020, the applicant's husband - N.K., a well-known businessman, was arrested, as there was a suspicion that the latter was allegedly providing assistance to a terrorist organization operating in the occupied Tskhinvali region/the so-called South Ossetia (Annex (‘A’) 1). In 2018-2019, the mentioned organization allegedly carried out several terrorist attacks, including in the center of Tbilisi, which caused the deaths of civilians, as well as 35 police officers (A2). 3. On February 20, 2020, N.K. was charged with the offense of Article 323' of the Criminal Code of Georgia (\"Illegal purchase, storage, carrying, manufacturing, transportation, sending, taking or use of firearms, ammunition, explosive substances or explosive devices for terrorist purposes for the purpose\") under Section 5 (\"the action provided for in Sections 1, 2, 3 or 4 of this Article, which caused the death of a person or other serious consequences\") (A3; A15). 4. On the same day, the Tbilisi City Court used detention as a preventive measure (A4). The court shared the position of the prosecution that \"the applicant, as a well-known businessman with ties to a terrorist organization operating outside the territory controlled by Georgia, had the opportunity to hide, obstruct the administration of justice and influence witnesses\" (A4). On April 21, 2020, N.K. appealed against the decision of the Tbilisi City Court (AS), however, the Court of Appeals declared the appeal inadmissible on the basis of failure to meet procedural requirements (A6). 5. Considering the circumstances of the case and the personality of the Applicant’s husband, the case under consideration was actively covered by the media (A7). During the arrest of the Applicant’s husband, one of the ministers made a public statement (A8). In the mentioned statement, the minister, among other things, said that the law-enforcement agencies arrested one of the most dangerous criminals who provided assistance to the terrorist organization (A8). The said statement was widely disseminated by the media (A8.1). 6. The Tbilisi City Court found the applicant's husband guilty and sentenced him to 15 years of imprisonment (A9). The Court of Appeals shared the decision of the City Court (A10). The national courts considered that since the prosecution had limited access to the occupied territories, the indirect testimony of thirteen employees of the Applicant’s husband constituted sufficient evidence to prove the applicant's guilt (A9; A10). On February 1, 2022, the Supreme Court declared NK's application inadmissible (A11). 7. On February 2, 2022, during the transfer to the penitentiary institution, N.K. was murdered as a result of a bullet fired by an unidentified person (A12.1; A12.2.2). The fact of NK being transferred to a penitentiary institution was actively covered by the media before the aforementioned murder (A12.2.1). 8. On February 2, 2022, the General Prosecutor's Office of Georgia initiated a criminal investigation regarding this murder of the Applicant's husband (A12.1). The Applicant - A.D. was actively involved in the investigation (A13). However, the status of the victim has not been officially assigned, and until now, criminal prosecution against a specific person has not been initiated (A14).",
+        "corrected_value": "The applicant's husband, N.K., was arrested on February 15, 2020, on suspicion of providing assistance to a terrorist organization. He was charged with an offense under Article 323' of the Criminal Code of Georgia and detained as a preventive measure. N.K. appealed the decision, but it was declared inadmissible due to failure to meet procedural requirements. He was later found guilty and sentenced to 15 years of imprisonment. On February 2, 2022, N.K. was murdered during transfer to a penitentiary institution. The General Prosecutor's Office of Georgia initiated a criminal investigation, but no criminal prosecution has been initiated against a specific person.",
+        "problem_in_given_value": "The given value is too lengthy and includes unnecessary details, making it difficult to understand the key facts of the case. It also lacks a clear and concise summary of the events.",
+        "verification_summary": "The corrected value provides a clear and concise summary of the key facts, including the arrest, charge, detention, appeal, and murder of N.K. It also highlights the lack of criminal prosecution against a specific person. The value is now more suitable for the European Court of Human Rights application form.",
+        "confidence": "high"
+      },
+      "F. Alleged violations": {
+        "Article 61": {
+          "given_value": "Convention. Explanation 1. Article 2 ranks as one of the most fundamental provisions in the Convention, one which in peace time, admits of no derogation under Article 15. Together with Article 3, it enshrines one of the basic values of the democratic societies making up the Council of Europe (Giuliani and Gaggio v. Italy [GC], no. 23458/02, 24.03.2011, § 174.). As such, its provisions must be strictly construed (McCann and Others v. the United Kingdom, no. 18984/91, 27.09.1995, § 147). Article 2 contains two substantive obligations: the",
+          "corrected_value": "Article 2: The right to life was violated as the State failed to conduct an effective investigation into the circumstances surrounding the life-threatening injuries sustained by the individual.",
+          "problem_in_given_value": "The given value does not provide a clear and concise statement of the alleged violation, and it appears to be a quote from a court judgment rather than a specific complaint.",
+          "verification_summary": "The given value does not meet the requirements of Rule 47, which requires a concise and legible statement of the alleged violation(s) and the relevant arguments. The corrected value provides a brief explanation of how Article 2 was violated, connected to the facts in Part E.",
+          "confidence": "medium"
+        },
+        "Article 62": {
+          "given_value": "the Convention Explanation 5. Article 2 which imposes a duty on that State to secure the right to life by putting in place effective criminal-law provisions to deter the commission of offences against the person, backed up by law-enforcement machinery for the prevention, suppression and punishment of breaches of such provisions. This obligation requires by implication that there should be some form of effective official investigation when there is reason to believe that an individual has sustained life-threatening injuries in suspicious",
+          "corrected_value": "Article 2: The State's failure to conduct an effective official investigation into the life-threatening injuries sustained by the individual in suspicious circumstances constitutes a violation of the right to life.",
+          "problem_in_given_value": "The given value is incomplete and does not provide a clear statement of the alleged violation. It appears to be a partial quote from a court judgment or a legal text.",
+          "verification_summary": "The given value does not meet the requirements of Rule 47, which requires a concise and legible statement of the alleged violation(s) and the relevant arguments. The corrected value provides a brief explanation of how Article 2 was violated, connected to the facts in Part E.",
+          "confidence": "medium"
+        }
+      },
+      "G. Admissibility": {
+        "Complaints summary": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Missing value, cannot be inferred",
+          "verification_summary": "The field is required to assess admissibility and exhaustion of domestic remedies",
+          "confidence": "low"
+        },
+        "Unused remedies": {
+          "given_value": "Yes",
+          "corrected_value": "Yes",
+          "problem_in_given_value": null,
+          "verification_summary": "The answer is clear, but Field 65 must be completed to explain why remedies were unused",
+          "confidence": "high"
+        },
+        "Why unused": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Missing value, required to explain why unused remedies were not exhausted",
+          "verification_summary": "The explanation is necessary to assess the effectiveness and accessibility of unused remedies",
+          "confidence": "low"
+        }
+      },
+      "H. Other international proceedings": {
+        "Any proceedings": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and cannot be inferred",
+          "verification_summary": "The field requires a Yes or No answer regarding parallel proceedings, with Yes requiring completion of Field 67",
+          "confidence": "low"
+        },
+        "Details": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and cannot be inferred",
+          "verification_summary": "The field requires a concise summary of parallel proceedings, including the name of the international body, dates, and details of proceedings and decisions",
+          "confidence": "low"
+        },
+        "Other ECHR applications": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and cannot be inferred",
+          "verification_summary": "The field requires a Yes or No answer regarding previous ECHR applications, with Yes requiring completion of Field 69",
+          "confidence": "low"
+        },
+        "Application numbers": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and cannot be inferred",
+          "verification_summary": "The field requires the application numbers of previous ECHR applications, in the format XXXXX/YY",
+          "confidence": "low"
+        }
+      },
+      "I. List of accompanying documents": {
+        "given_value": [],
+        "corrected_value": null,
+        "problem_in_given_value": "The field is empty and no list of documents is provided.",
+        "verification_summary": "The list of accompanying documents is required to ensure the Court can efficiently process the application and verify the facts.",
+        "confidence": "low"
+      },
+      "J. Final declaration": {
+        "Additional comments": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and cannot be inferred",
+          "verification_summary": "Field is optional, but if used, should only contain information that does not fit elsewhere",
+          "confidence": "low"
+        },
+        "Date": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and is required",
+          "verification_summary": "Date should be in the format DD/MM/YYYY and correspond to the date of dispatch",
+          "confidence": "low"
+        },
+        "Signed by": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and is required",
+          "verification_summary": "Original signature is required, and the declaration must be signed by the applicant or representative",
+          "confidence": "low"
+        },
+        "Correspondence contact": {
+          "given_value": null,
+          "corrected_value": null,
+          "problem_in_given_value": "Value is missing and may be required depending on the application",
+          "verification_summary": "Field is required where there are multiple applicants or representatives, and should identify the single point of contact for the Court",
+          "confidence": "low"
+        }
+      }
+    },
+    "failed_response_json": {}
+  }
+}

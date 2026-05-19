@@ -12,6 +12,7 @@ env/
 ENV/
 
 .env
+.env gwdg
 # Files
 
 # Ignore app data folder
@@ -22,3 +23,5 @@ Backend/sample data/
 
 # Ignore all notebook files inside Backend
 Backend/*.ipynb
+
+VM/
