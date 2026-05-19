@@ -74,7 +74,7 @@ FTRT/
 ## 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone [FTRT](https://github.com/PositiveDefinite551/FTRT)
 cd FTRT
 ```
 
